@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style> /*Os pseudoelementos podem agir nas classes, elementos, ids, etc, eles mexem no conteudo periferico do elemento.  
+
+
+    Para usar ID no CSS, usa "#".
+    Para usar classe no CSS, usa ".".
+    Para usar pseudoclasses no CSS, usa ":".
+    Para usar pseudoelementos no CSS, usa "::".
+    Para indicar o filho do elemento, usa ">".
+    
+    
+    
+    
+    */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: black;
+        }
+        
+        h1 {
+            border: 1cm;
+            color: white;
+        }
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited {
+            color: rgb(82, 7, 7);
+        }
+        a:hover {
+            text-decoration: underline;
+            color: black;
+        }
+        a:active { /*Significa quando está ATIVO. Em um link por exemplo, quando clicar em um link, ele está ativo.*/
+            color: yellow;
+        }
+
+        .especial {
+            background-color: rgb(233, 77, 77);
+            color: white;
+        }
+    
+        .especial::before {
+            content: '⇒';
+            
+        }
+
+        .especial::after {
+            content: '⇐';
+        }
+        
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io" target="_blank">Repositório GitHub</a></li>
+        <li><a href="https://youtube.com/cursoemvideo/" target="_blank" class="especial">Canal do YouTube</a></li>
+        <li><a href="https://www.cursoemvideo.com" target="_blank">Site do Curso em Video</a></li>
+    </ul>
+</body>
+</html>

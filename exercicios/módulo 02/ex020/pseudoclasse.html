@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes</title>
+    <style>
+        /*As pseudoclass tem que está relacionada a um elemento ou a uma class.
+        Pseudoclass são relacionados ao estado de um elemento. Você CONFIGURA o ESTADO.
+        Uma pseudo class no CSS é :. Por exemplo:
+            div:
+        
+        A pseudoclasse HOVER, significa que "quando passar o mouse por cima."
+
+        div:hover
+        
+        *Usando a pseudoclass HOVER* 
+
+        Exemplo simples de pseudoclasse:
+
+        div:hover {
+            color: red;
+        }
+
+        *Fazendo um "menu", um bem básico.*
+
+         div > p { /*Com esse seletor, quer dizer que a p é filho de div.*/
+         /*display: none; Isso quer dizer para não mostrar esse paragrafo. 
+        }*/
+
+        /*div:hover > p { /*Está dizendo que p é filho de hover.
+            display: block; Isso que dizer que vai mostrar o parágrafo como um bloco.
+            color: white;
+            background-color: red;
+            width: 300px;
+        }*/
+        /*
+        O código border é a borda
+        O código height é a altura
+        O código width é a largura*/
+        div {
+            display: inline-block;
+            background-color: lightgray;
+            border: 1px solid black;
+            text-align: center;
+            height: 200px;
+            width: 200px;
+        }
+        
+        div:hover {
+            background-color: yellow;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="d1">01</div>
+    <div id="d2">02</div>
+    <div id="d3">03</div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <!--Tamanho de imagens "adequado" para cada dispositivo: celular 300, tablet 700 e computador 1000. Editar no GIMP é difícil, prefiro no capcut. Cauê: Recomendo pesquisar mais tamanhos, porque no notebook não ficou legal. Pode ser por causa do tamnho da tela que é menor que a de um computador.--> <!--Capítulo 11, aula 01, PRA CIMA-->
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse sute en vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 550px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 765px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexivel">
+    </picture> <!--Permite que você crie uma imagem que se adapta com o tamanho da tela do usuário.--> <!--Os SOURCE tem que ser acima do IMG. A ordem é de baixo para cima.--> <!--Capítulo 11, aula 02, PRA CIMA-->
+
+    <!--Efeitos sonoros grátis: entre na biblioteca de áudio do Youtube. Cuidado com o tamnho do áudio.-->
+    <!--Tem dois jeitos de colocar o áudio para funcionar-->
+    <h1>Reproduzindo áudio</h1>
+    <!--Cuidado com os direitos autoriais.-->
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <h3>Primeira forma de reproduzir áudios</h3>
+    <audio src="midia/happy-mistake.mp3" controls autoplay></audio>
+    <!--Não muito segura, pois so tem um formato.-->
+    <br>
+    <h3>Segunda forma de reproduzir áudios</h3>
+    <!--Tem muitos navegadores que não funcionam com o MP3.--> <!--Alguns formatos: MP3, WAV, OGG. wav é pesadoooo-->
+    <audio preload="metadata" controls loop>
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midia/guanacast-33.ogg" type="audio/ogg">
+        <source src="midia/guanacast-33.wav" type="audio/wav">
+        <p>Infelizmente, seu navegador não consegue reproduzir audio. <a href="midia/guanacast-33.mp3">Clique aqui para baixar o arquivo.</a></p>
+        <!--Forma mais segura, pois se não conseguir baixar o primeiro áudio, tem outras duas chances de baixar. EVITE COLOCAR WAV, PORQUE É MUITO PESADOOOOOOO. -->
+    </audio>
+    <!--preload= forma que o áudio vai aparecer quando abrir o site. Auto: baixa o áudio automaticamente e aparece as informações, metadata= aparece primeiro as informações, depois baixa (quando apertar o play) e none, que não aparece nada, mas ainda consegue baixar o áudio, e aparece as informações após baixar.-->
+    <!--Autoplay: apesar de não está funcionando acredito que seja, literalmente, começar o áudio automaticamente. Controls = Aparece os botões para apertar play, pausar, volume, etc.-->
+    <!--Loop= Quando acabar o áudio ele recomeça.-->
+    <!--Capítulo 11, aula 03. PRA CIMA.-->
+</body>
+</html>

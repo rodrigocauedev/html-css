@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Trabalhando com listas</h1>
+    <h2>Listas Ordenadas</h2> <!--Listas ordenadas são listas que a ORDEM faz diferença.-->
+    <ol type="I" > <!--1 A a I i-->
+        <li>Acordar</li>
+        <li>Ligar para o João</li>
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li> <!--Não é obrigado fechar a TAG LI.-->
+        <li>Ir para a faculdade</li>
+        <li>Almoçar</li>
+        <li>Ir para o trabalho</li>
+        <li>Voltar para casa</li>
+        <li>Jantar</li>
+        <li>Dormir</li>
+    </ol>
+    <h2>Listas não ordenadas</h2> <!--As listas não ordenadas são as listas que a ordem não importa.-->
+    <ul type="square"> <!--disc circle square-->
+        <li>Pão</li>
+        <Li>Leite</Li>
+        <li>Tomate</li>
+        <li>Alface</li>
+        <li>Manteiga</li>
+        <li>Arroz</li>
+        <li>Feijão</li>
+    </ul>
+    <h2>Minhas linguagens favoritas</h2>
+    <ol>
+        <li>Antigas</li>
+        <ol type="a"> <!--O start é númerico, ou seja, se quiser começar em outra letra, conte na descendente. Exemplo: 2 objetos listado quer começar no b, coloque "start = 2".-->
+            <li>Clipper</li>
+            <li>Visual Basic</li>
+            <li>Fortran</li>
+            <li>Delphi</li>
+        </ol>
+        <li>Novas</li>
+        <ol type="a"> <!--O start é númerico, ou seja, se quiser começar em outra letra, conte na descendente. Exemplo: 2 objetos listado quer começar no b, coloque "start = 2".-->
+            <li>PHP</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>Kotlin</li>
+        </ol>
+    </ol> <!--Esse OL dentro de outro OL, se chama aninhamento, e não alinhamento. Está organizado e não bagunçado. Organização é tudo.-->
+    <h2>Meus jogos favoritos (Guanabara)</h2>  
+    <ol>
+        <li>NES</li>
+        <ul type="square">
+            <li>Mario Bros</li>
+            <ul type="circle">
+                <li>Mario Bros 3</li>
+                <li>Mario: Lost Levels</li>
+            </ul>
+            <li>Ninja Gaiden</li>
+        </ul>
+        <li>SNES</li>
+        <ul type="square">
+            <li>Mario</li>
+            <li>Donkey Kong</li>
+        </ul>
+        <li>PlayStation</li>
+        <ul type="square">
+            <li>Final Fantasy</li>
+            <li>Castlevania</li>
+        </ul>
+    </ol>
+    <h2>Meus jogos favoritos (Cauê)</h2>
+    <ol>
+        <li>PlayStation 2</li>
+        <ul type="square">
+            <li>Bomba Patch</li>
+            <li>GTA SAN ANDREAS</li>
+        </ul>
+        <li>Xbox 360</li>
+        <ul type="square">
+            <li>Assassins Creed Rogue</li>
+            <li>Far Cry 4</li>
+        </ul>
+        <li>PlayStation 4</li>
+        <ul type="square">
+            <li>Red Dead Remdemption 2</li>
+            <li>GTA V</li>
+        </ul>
+    </ol> <!--O que está se formando são NÍVEIS.-->
+    <h2>Jogos que eu quero jogar (Cauê)</h2>
+    <ol>
+        <li>PlayStation 4</li>
+        <ul type="square">
+            <li>Elden Ring</li>
+            <li>The Last of Us: Part 1</li>
+            <li>The Last of Us: Part 2</li>
+            <li>The Witcher 3</li>
+            <li>God Of War III</li>
+        </ul>
+        <li>PlayStation 5</li>
+        <ul type="square">
+            <li>GTA VI</li>
+            <li>Black Myth: Wukong</li>
+        </ul>
+    </ol>
+    <h2>Lista de Definições</h2>
+    <dl> <!--Começo do codigo de Lista de Definição-->
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação para a criação de conteúdo de um site.</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para a criação do design de um site</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação para a criação de interatividade de um site.</dd>
+    </dl>
+</body>
+</html>

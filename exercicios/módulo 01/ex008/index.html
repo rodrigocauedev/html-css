@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de texto</title>
+    <style>
+        mark {
+            background-color: lime;
+        } 
+
+    </style> <!--Para todos os MARK mudar de cor automaticamente, faça um style usando a TAG. Se quiser mudar o estilo (style) de alguma outras TAG, provalvemnte vai ter que usar a TAG nesse mesmo local.-->
+</head>
+<body>
+    <h1>Principais formatações</h1>    
+    <h2>Negrito/Destaque</h2>
+    <p>Nessa frase temos um <b>termo em negrito</b> usando a tag &lt;b&gt; (não semântica).</p> <!--Só tem sentido em forma-->
+    <p>Nesta frase, tenho um <strong>termo em destaque</strong> usando a tag &lt;strong&gt; (Semântica).</p> <!--Esse termo é "FORTE", ele tem DESTAQUE!-->
+    <h2>Itálico / Ênfase</h2>
+    <p>Nesta frase, temos um <i>termo em itálico</i> usando a tag &lt;i&gt; (não semântica).</p>
+    <p>Nesta frase, temos um <em>termo em ênfase</em> usando a tag &lt;EM&gt; (semântica).</p>
+    <h2>Texto marcado</h2>
+    <p>Podemos criar também <mark>um texto marcado</mark> usando a tag MARK.</p> <!--Não tem como mudar a cor com o HTML, mas sim com o CSS. Quando se faz o style dentro de um MARK específico, muda apenas a cor desse MARK, não de todos.-->
+    <p>E no outro parágrafo, temos <mark> outro texto marcado </mark> no final.</p>
+    <p>Para criar uma marcação se usa a TAG &lt;mark&gt;.</p>
+    <h2>Texto grande e pequeno</h2>
+    <p>Estamos criando um <big>texto grande</big> e um <small>texto pequeno</small> nesse parágrafo.</p> <!--Se quiser aumentar uma letra, aumente no CSS, mas SMALL, que existem nos contratos, pode ainda se utiliza.-->
+    <p>A TAG para criar um texto grande é <mark>&lt;big&gt;</mark>, mas é uma TAG que <strong>pode sair</strong> do HTML5 a qualquer momento. A TAG para criar um texto pequeno é <mark>&lt;small&gt;</mark>.</p> <!--A TAG big, pode sair do html a qualquer momento, cuidado.-->
+    <h2>Texto deletado</h2>
+    <p>Podemos marcar <del>um texto como excluído</del> para indicar que ele dever ser lido, mas não considerado,</p>
+    <p>A TAG para indicar um texto deletado é &lt;del&gt;</p>
+    <h2>Texto inserido</h2>
+    <p>Podemos marcar <ins>um texto como inserido</ins> para dar uma ênfase e indicar que ele não foi adicionaco depois. A TAG usada é &lt;ins&gt;.</p>
+    <p>Existe também o <u>sublinhado</u> com a tag &lt;u&gt; (não semântica).</p>
+    <h2>Texto sobrescrito</h2>
+    <p>Para inserir coisas do tipo x<sup><mark>20</mark></sup>+3, use a TAG &lt;sup&gt;.</p><!--O SUP serve para subir o número, ou letra.-->
+    <h2>Texto subscrito</h2>
+    <p>Para inserir coisas do tipo H<sub><mark>2</mark></sub>O, use a TAG &lt;sub&gt;.</p> <!--A tag SUB, serve para deixar o número ou letra mais abaixo.-->
+    </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <!--Capítulo 11, aula 05-->
+    <h1>Inserindo vídeos hospedados localmente.</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+    
+    <!--Primeira forma-->
+    <!--Usando apenas <video>-->
+    <!--Não é segura, pois só tem 1 formato.-->
+
+    <!--Segunda forma-->
+    <video width="500" poster="imagens/capa.jpg" controls>
+        <!--Use o source:src-->
+        <source src="midia/meuvideo2.mp4.Mp4" type="videomp4">
+        <source src="midia/meuvideo.mkv.mkv" type="video/mp4">
+        <source src="midia/meuvideo.webm.webm" type="video/webm">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos.</p>
+    </video> <!--A ordem é de cima para baixo, o primeiro irá carregar primeiro.-->
+    <!--width: Largura do video-->
+    <!--controls: aparece o pause, etc-->
+    <!--Poster: deixa uma capa de video.-->
+    
+    <!--Vídeos hospedados no próprio site vai consumior muitos dados, ou seja, vai pesar no bolso do cliente.-->
+
+    <!--Capítulo 11, aula 06-->
+
+    <h1>Inserindo vídeos do Youtube</h1>
+    <!--RECOMENDADO, porque não usa dados da sua hospedagem, e sim do YouTube. Só copiar no próprio YouTube e colar no VSCODE.-->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/i7L19SOqbNM?si=Wa6zo-JIHlu-rxSG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <h1>Inserindo video do Vimeo</h1>
+    <!--Se o cliente quiser um serviço de vídeo mais privado, recomendar algo pago.-->
+    <!--Self Roster-->
+    <p>Não achei vídeo do Viemo</p>
+</body>
+</html>
