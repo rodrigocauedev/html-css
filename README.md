@@ -4,4 +4,4 @@ Postei a pasta de HTML e CSS (como foi pedido no curso) e peço para que vocês 
 
 Vou continuar estudando e, principalmente, estudar a como posicionar textos, imagens, etc, essa foi a parte que eu achei mais complicada, porque tem uns que é só falar "center", mas tem outros que não.
 
-Enfim, é isso, tmj, estudem. :)
+Enfim, é isso. :)
