@@ -8,4 +8,4 @@ Enfim, é isso. :)
 
 Rodrigo Cauê
 
-<a href="https://rodrigocauedev.github.io/html-css/desafios/d010-meu">Executar o desafio 10</a>
+<a href="https://rodrigocauedev.github.io/html-css/desafios/d010-meu/android.html">Executar o desafio 10</a>
