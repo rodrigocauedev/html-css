@@ -114,12 +114,13 @@
         background-color: #a2f38e;
         border-radius: 0 0 10px 10px;
     }
-    .duas-colunas {
-    column-count: 2;
-    list-style-type: square;
-    padding: 5px 100px;
-    max-width: 800px;
-  }
+
+    aside  ul {
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+    columns: 2;
+    }
+
   footer {
     background-color: black;
     color: white;
