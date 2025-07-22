@@ -11,6 +11,7 @@
     }
 
     body{
+        font-family: Arial, Helvetica, sans-serif;
         padding: 0;
         margin: 0;
         box-sizing: border-box;
@@ -22,11 +23,15 @@
         color: white;
     }
 
-    #tituloprincipal {
+    header h1 {
         font-family: 'Times New Roman', Times, serif;
         font-size: 25px;
         margin: 0px;
         padding-top: 30px;
+    }
+
+    #textheader {
+        font-size: 20px;
     }
 
     .centro {
@@ -36,20 +41,21 @@
         text-shadow: 1px 1px 1px black;
     }
 
-    .nave{
+    header a{
         color: white;
         font-weight: bold;
         text-decoration: none;
-        padding: 1px;
+        padding: 2px 2px 5px 2px;
         margin-left: 10px;
         background-color: transparent;
     }
 
-    .nave:hover {
+    header a:hover {
         text-decoration: none;
         background-color: green;
+        color: rgb(29, 28, 28);
         border-radius: 3px;
-        padding: 1px;
+        padding: 5px;
         margin-left: 10px;
     }
 
@@ -61,45 +67,52 @@
     background-color: white;
     font-family: Arial, Helvetica, sans-serif;
     padding: 1px 20px 1px 20px;
-    text-indent: 30px;
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.356);
     font-weight: bold;
-    position: relative;
     text-align: justify;
     }
-    #titulo {
+
+    main h1 {
         font-family: 'idroid', Times, serif;
         color: green;
         font-size: 30px;
     }
-    .subtitulo {
+
+    main h2 {
         font-family: 'idroid';
         color: green;
         background-image: linear-gradient(to right, rgba(0, 255, 0, 0.219), rgba(65, 168, 65, 0.103), rgba(25, 92, 25, 0));
     }
-    h1, h2 {
-        text-indent: 0;
+
+    main p {
+        text-indent: 30px;
+        line-height: 1.4em;
     }
+    
     span {
         color: green;
     }
-    a {
+
+    main a {
         text-decoration: none;
+        background-color: #2ab906;
+        color: black;
+    }
+
+    main a:hover {
+        padding: 0;
         background-color: #2EEB00;
-        color: green;
+        text-decoration: underline;
     }
 
     img {
         width: 100%;
     }
+
     iframe {
         width: 100%;
     }
-    a:hover {
-        padding: 0;
-        background-color: #2EEB00;
-        text-decoration: underline;
-    }
+
     #extra {
         background-color: #3b8b26;
         font-weight: bold;
@@ -108,17 +121,20 @@
         padding: 1px 1px;
         border-radius: 10px 10px 0 0;
     }
+
     #extramais{
         margin: 0 30px 0 30px;
-        padding: 1px 6px 1px 6px;
+        padding: 1px 8px;
         background-color: #a2f38e;
         border-radius: 0 0 10px 10px;
     }
 
-    aside  ul {
-    list-style-type: '\2714\00A0\00A0';
-    list-style-position: inside;
-    columns: 2;
+    .duas-colunas {
+        column-count: 2;
+        max-width: 800px;
+        padding: 5px 10px;
+        list-style-position: inside;
+        list-style-type: none;
     }
 
   footer {
@@ -127,4 +143,4 @@
     width: 100%;
     text-align: center;
     padding-bottom: 1px;
-  }
+    }
