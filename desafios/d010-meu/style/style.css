@@ -26,8 +26,8 @@
     header h1 {
         font-family: 'Times New Roman', Times, serif;
         font-size: 25px;
-        margin: 0px;
         padding-top: 30px;
+        margin: 0;
     }
 
     #textheader {
@@ -36,7 +36,6 @@
 
     .centro {
         text-align: center;
-        padding-top: 10px;
         padding-bottom: 3px;
         text-shadow: 1px 1px 1px black;
     }
@@ -65,7 +64,6 @@
     max-width: 800px;
     border: 1px 1px 1px 1px black;
     background-color: white;
-    font-family: Arial, Helvetica, sans-serif;
     padding: 1px 20px 1px 20px;
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.356);
     font-weight: bold;
@@ -96,6 +94,7 @@
     main a {
         text-decoration: none;
         background-color: #2ab906;
+        border-radius: 5px;
         color: black;
     }
 
