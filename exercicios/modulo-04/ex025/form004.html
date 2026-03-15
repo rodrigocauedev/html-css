@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <!--
+    Para pedir o email de uma pessoa se usa o input:email
+
+    <input type="email" name="email" id="iemail" required autocomplete="email">
+
+    Para pedir o telefone se usa input:tel
+
+    <input type="tel" name="tel" id="itel" autocomplete="tel" maxlength="20">
+
+    Estudar mais sobre RegEx.
+
+    Se quiser agrupar uma quantidade x de elementos precisa envelopar TODOS eles UM único "fieldset" e usa "legend" para deixar um tipo de título sobre o que é esse agrupamento.
+    -->
+    <h1>Exemplo de fomulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <p>
+                <label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome" required minlength="3" maxlength="40">
+            </p>
+            <p>
+                <label for="iemail">Email:</label>
+                <input type="email" name="email" id="iemail" required autocomplete="email" maxlength="30">
+            </p>
+            <p>
+                <label for="itel">Telefone:</label>
+                <input type="tel" name="tel" id="itel" autocomplete="tel" maxlength="20" pattern="^(\d{2}\)\d{4,5}- \d{4}$" placeholder="(xx) xxxx-xxxx">
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
