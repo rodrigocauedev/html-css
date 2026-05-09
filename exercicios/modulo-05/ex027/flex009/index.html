@@ -9,24 +9,26 @@
             background-color: lightsalmon;
             
             display: flex;
+            flex-flow: row nowrap;
         }
 
         .item {
             background-color: lightskyblue;
             border: 1px solid black;
             text-align: center;
-            flex: auto;
+            flex-basis: auto;
+            flex-basis: 200px;
         }
     </style>
 </head>
 <body>
     <div class="conteiner">
         <div class="item">A</div>
-        <div class="item">B</div>
+        <div class="item">Conteúdo maior</div>
         <div class="item">C</div>
         <div class="item">D</div>
-        <div class="item">E</div>
-        <div class="item">F</div>
+        <div class="item">Conteúdo maior ainda</div>
+        <div class="item">Conteúdo maior para você ver que muda.</div>
         <div class="item">G</div>
     </div>
 </body>
