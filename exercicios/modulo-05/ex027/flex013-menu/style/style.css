@@ -1,4 +1,4 @@
-@charset "UTD-8";
+@charset "UTF-8";
 
 * {
     padding: 0;
@@ -7,27 +7,27 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1em;
     background-color: lightgray;
-    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
     width: 100vw;
+    height: 100vh;
 }
 
 header {
     background-color: gray;
-    color: white;
-    padding: 12px;
+    padding: 10px;
+
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
 }
 
-header > h1 {
+header h1 {
+    color: white;
+    text-shadow: 1px 1px 1px black;
+
     flex: 0 0 200px;
-    text-align: center;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.486);
 }
 
 header > nav {
@@ -39,23 +39,30 @@ header > nav {
 header > nav > a {
     background-color: black;
     color: white;
+    text-decoration: none;
     padding: 10px;
     margin: 5px;
-    border-radius: 5px;
-    text-decoration: none;
     text-align: center;
+
+    flex: auto;
 }
 
 header > nav > a:hover {
     background-color: white;
     color: black;
-    transition: background-color 0.6s;
+    transition: background-color 0.4s;
 }
 
 main {
     background-color: white;
-    margin: 10px;
     padding: 10px;
+    margin: 10px;
     border-radius: 10px;
-    box-shadow: 2px 2px 3px 3px rgba(0, 0, 0, 0.244);
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.300);
+}
+
+main > p {
+    margin-bottom: 10px;
+    line-height: 1.5em;
+    text-indent: 30px;
 }
