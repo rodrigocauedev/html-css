@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template: repeat(6, 100px) / repeat(3, 1fr);
+            gap: 5px;
+            color: white;
+            text-align: center;
+        }
+
+        .topo {
+            background-color: red;
+            grid-area: 1 / 1 / 2 / 4;
+            align-content: center;
+        }
+
+        .menu {
+            background-color: blue;
+            grid-area: 2 / 1 / 3 / 4;
+            align-content: center;
+        }
+
+        .principal {
+            background-color: green;
+            grid-area: 3 / 1 / 6 / 3;
+            align-content: center;
+        }
+
+        .secundario {
+            background-color: purple;
+            grid-area: 3 / 3 / 6 / 4;
+            align-content: center;
+        }
+
+        .rodape {
+            background-color: brown;
+            grid-area: 6 / 1 / 7 / 4;
+            align-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="topo">topo</div>
+        <div class="menu">menu</div>
+        <div class="principal">principal</div>
+        <div class="secundario">secundario</div>
+        <div class="rodape">rodape</div>
+    </div>
+</body>
+</html>
